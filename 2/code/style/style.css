@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Diphylleia-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/Diphylleia-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Diphylleia-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/Diphylleia-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  width: 400px;
+  aspect-ratio: 1 / 0.7;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+}
+
+.card .image-box {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.card .image-box img {
+  border: 3px solid #fff;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 90%;
+  border-radius: inherit;
+  transition: 0.5s ease-in-out;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid #fff;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.card:hover img {
+  filter: grayscale(1) brightness(0.4);
+}
+
+.card:hover::after {
+  opacity: 1;
+  inset: 20px;
+}
+
+.content {
+  width: 80%;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.card:hover .content {
+  transition: 0.6s ease-in-out;
+  opacity: 1;
+}
+
+.content h2 {
+  width: inherit;
+  margin: 0 auto;
+  font-weight: bold;
+  color: #fff;
+}
+
+.content a {
+  color: #333;
+  background: #ffffff9c;
+  width: 100px;
+  line-height: 15px;
+  margin: 50px auto 0;
+  padding: 5px 10px;
+  display: block;
+  border-radius: 5px;
+  font-weight: bold;
+}

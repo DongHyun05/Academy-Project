@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/sign.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/MCS_LOGO-B.png" type="image/x-icon" />
+    <title>회원가입</title>
+  </head>
+  <body>
+    <header>
+      <div class="top-box">
+        <div class="top-main">
+          <div class="symbol">
+            <a href="./index.html" class="logo">
+              <img src="./svg/MCS_LOGO.svg" alt="헤더 로고" />
+            </a>
+          </div>
+          <div class="right-top">
+            <ul class="joiner">
+              <li><a href="./login.html">로그인</a></li>
+              <li><a href="./join.html">회원가입</a></li>
+            </ul>
+            <a href="./mypage.html" class="my-page">
+              <img src="./svg/User.svg" alt="My page" />
+            </a>
+            <a href="#" class="cart">
+              <img src="./svg/장바구니.svg" alt="cart" />
+            </a>
+          </div>
+          <div class="middle-top">
+            <label for="search">검색</label>
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="검색어를 입력하세요"
+            />
+          </div>
+          <nav>
+            <ul>
+              <li><a href="./index.html">홈</a></li>
+              <li><a href="#">랭킹</a></li>
+              <li><a href="#">코디</a></li>
+              <li><a href="#">스타일</a></li>
+              <li><a href="#">카테고리</a></li>
+              <li><a href="#">이벤트</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="bottom-box">
+        <div class="top-main">
+          <div class="sub-nav">
+            <a href="#">
+              <img src="./svg/list.svg" alt="목록" />
+            </a>
+            <div class="sub-nav1">
+              <ul>
+                <li><a href="#">맨투맨/스웨트셔츠</a></li>
+                <li><a href="#">셔츠/블라우스</a></li>
+                <li><a href="#">트레이닝/조거 팬츠</a></li>
+                <li><a href="#">후드 티셔츠</a></li>
+                <li><a href="#">데님 팬츠</a></li>
+                <li><a href="#">카디건</a></li>
+                <li><a href="#">나일론/코치 재킷</a></li>
+                <li><a href="#">슈트 팬츠/슬랙스</a></li>
+                <li><a href="#">슈트/블레이저 재킷</a></li>
+                <li><a href="#">후드 집업</a></li>
+                <li><a href="#">패션스니커즈화</a></li>
+                <li><a href="#">캔버스/단화</a></li>
+                <li><a href="#">레더/라이더스 재킷</a></li>
+                <li><a href="#">스타디움 재킷</a></li>
+              </ul>
+            </div>
+            <ul>
+              <li><a href="#">아우터</a></li>
+              <li><a href="#">상의</a></li>
+              <li><a href="#">셔츠</a></li>
+              <li><a href="#">하의</a></li>
+              <li><a href="#">신발</a></li>
+              <li><a href="#">모자</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="chat">
+      <a href="#"> </a>
+    </div>
+    <div class="wrapper-2">
+      <div class="container-1">
+        <h1>회원가입</h1>
+        <form id="signupForm">
+          <label for="newUsername">이름 :</label>
+          <input type="text" id="newUsername" name="newUsername" required />
+          <label for="newUserid">아이디 :</label>
+          <input type="text" id="newUserid" name="newUserid" required />
+          <label for="newPassword">비밀번호 :</label>
+          <input type="password" id="newPassword" name="newPassword" required />
+          <label for="confirm-password">비밀번호 확인 :</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+          />
+          <label for="newEmail">이메일 :</label>
+          <input type="email" id="newEmail" name="newEmail" required />
+          <label for="newAddress">주소 :</label>
+          <input type="text" id="newAddress" name="newAddress" required />
+          <div>
+            <input type="checkbox" name="icc" id="icc" />
+            <a href="#" class="ica">이용약관 동의</a>
+          </div>
+          <button type="submit" id="submit-btn">회원가입</button>
+        </form>
+      </div>
+      <div class="sns-login">
+        <a href="#">
+          <img src="./svg/sns(구글).svg" alt="구글 로그인" />
+        </a>
+        <a href="#">
+          <img src="./svg/sns(네이버).svg" alt="네이버 로그인" />
+        </a>
+        <a href="#">
+          <img src="./svg/sns(페이스북).svg" alt="페이스북 로그인" />
+        </a>
+        <a href="#">
+          <img src="./svg/sns(카톡).svg" alt="카톡 로그인" />
+        </a>
+      </div>
+    </div>
+    <footer>
+      <div class="bottom-main">
+        <div class="ft-top">
+          <div class="ft-left">
+            <div class="ft-lt">
+              <ul>
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">검수기준</a></li>
+                <li><a href="#">이용정책</a></li>
+                <li><a href="#">패널티 정책</a></li>
+                <li><a href="#">커뮤니티 가이드라인</a></li>
+              </ul>
+            </div>
+            <div class="ft-lt">
+              <ul>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">서비스 소개</a></li>
+                <li><a href="#">스토어 안내</a></li>
+                <li><a href="#">판매자 방문접수</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="ft-right">
+            <h3>고객센터 1588-7813</h3>
+            <p class="p-top">
+              운영시간 평일 10:00 - 18:00 (토·일, 공휴일 휴무)
+            </p>
+            <p>점심시간 평일 13:00 - 14:00</p>
+            <p class="p-bottom">1:1 문의하기는 앱에서만 가능합니다.</p>
+            <div class="ri-box">
+              <a href="#"><h3>자주 묻는 질문</h3></a>
+            </div>
+          </div>
+        </div>
+        <div class="ft-bottom">
+          <div class="ftb-left">
+            <div class="ft-head">
+              <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">인재채용</a></li>
+                <li><a href="#">제휴제안</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+              </ul>
+            </div>
+            <div class="ft-middle">
+              <ul>
+                <li>MCS 주식회사·대표 이동현</li>
+                <li>사업자등록번호 : 123-145-67890 사업자정보확인</li>
+                <li>통신판매업 : 제 2024-성남분당A-0123호</li>
+                <li>
+                  사업장소재지 : 경기도 성남시 분당구 분당내곡로 131 판교테크원
+                  타워1, 8층
+                </li>
+                <li>호스팅 서비스 : 네이버클라우드 ㈜</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ftb-right">
+            <div class="ft-img">
+              <a href="#"><img src="./svg/인스타_블랙.svg" alt="인스타" /></a>
+              <a href="#"
+                ><img src="./svg/페이스북_블랙.svg" alt="페이스북"
+              /></a>
+              <a href="#"
+                ><img src="./svg/카카오톡_블랙.svg" alt="카카오톡"
+              /></a>
+            </div>
+            <p class="copy">ⓒ MCS Corp.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      $msg = "회원가입 성공!";
+      document
+        .getElementById("signupForm")
+        .addEventListener("submit", function (event) {
+          var newPassword = document.getElementById("newPassword").value;
+          var confirmPassword =
+            document.getElementById("confirm-password").value;
+          if (newPassword !== confirmPassword) {
+            alert("비밀번호가 일치하지 않습니다. 다시 확인해주세요.");
+            return;
+          } else {
+            event.preventDefault();
+            alert($msg);
+            location.href = "./index.html";
+          }
+        });
+    </script>
+  </body>
+</html>

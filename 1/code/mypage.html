@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/mypage.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/MCS_LOGO-B.png" type="image/x-icon" />
+    <title>마이페이지</title>
+  </head>
+  <body>
+    <header>
+      <div class="top-box">
+        <div class="top-main">
+          <div class="symbol">
+            <a href="./index.html" class="logo">
+              <img src="./svg/MCS_LOGO.svg" alt="헤더 로고" />
+            </a>
+          </div>
+          <div class="right-top">
+            <ul class="joiner">
+              <li><a href="./login.html">로그인</a></li>
+              <li><a href="./join.html">회원가입</a></li>
+            </ul>
+            <a href="./mypage.html" class="my-page">
+              <img src="./svg/User.svg" alt="My page" />
+            </a>
+            <a href="#" class="cart">
+              <img src="./svg/장바구니.svg" alt="cart" />
+            </a>
+          </div>
+          <div class="middle-top">
+            <label for="search">검색</label>
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="검색어를 입력하세요"
+            />
+          </div>
+          <nav>
+            <ul>
+              <li><a href="./index.html">홈</a></li>
+              <li><a href="#">랭킹</a></li>
+              <li><a href="#">코디</a></li>
+              <li><a href="#">스타일</a></li>
+              <li><a href="#">카테고리</a></li>
+              <li><a href="#">이벤트</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="bottom-box">
+        <div class="top-main">
+          <div class="sub-nav">
+            <a href="#">
+              <img src="./svg/list.svg" alt="목록" />
+            </a>
+            <div class="sub-nav1">
+              <ul>
+                <li><a href="#">맨투맨/스웨트셔츠</a></li>
+                <li><a href="#">셔츠/블라우스</a></li>
+                <li><a href="#">트레이닝/조거 팬츠</a></li>
+                <li><a href="#">후드 티셔츠</a></li>
+                <li><a href="#">데님 팬츠</a></li>
+                <li><a href="#">카디건</a></li>
+                <li><a href="#">나일론/코치 재킷</a></li>
+                <li><a href="#">슈트 팬츠/슬랙스</a></li>
+                <li><a href="#">슈트/블레이저 재킷</a></li>
+                <li><a href="#">후드 집업</a></li>
+                <li><a href="#">패션스니커즈화</a></li>
+                <li><a href="#">캔버스/단화</a></li>
+                <li><a href="#">레더/라이더스 재킷</a></li>
+                <li><a href="#">스타디움 재킷</a></li>
+              </ul>
+            </div>
+            <ul>
+              <li><a href="#">아우터</a></li>
+              <li><a href="#">상의</a></li>
+              <li><a href="#">셔츠</a></li>
+              <li><a href="#">하의</a></li>
+              <li><a href="#">신발</a></li>
+              <li><a href="#">모자</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="sec">
+      <div class="chat">
+        <a href="#"> </a>
+      </div>
+      <div class="container">
+        <h1>마이페이지</h1>
+
+        <div class="profile">
+          <h2>개인 정보 관리</h2>
+          <div class="profile-img">
+            <img src="./img/profile.png" alt="프로필 이미지" />
+          </div>
+          <div class="profile-right">
+            <a href="#">
+              <img
+                src="./img/img_grade1.png"
+                alt="회원 등급 사진"
+                class="grade"
+              />
+            </a>
+            <a href="#">
+              <img src="./img/point.png" alt="포인트" class="point" />
+            </a>
+            <ul>
+              <li>
+                <p>포인트 : 5,000P</p>
+              </li>
+              <li>
+                <p>회원 등급 :</p>
+              </li>
+            </ul>
+          </div>
+          <form id="profile-form">
+            <label for="name">이름 :</label>
+            <input type="text" id="name" name="name" value="홍길동" disabled />
+            <label for="email">이메일 :</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value="example@example.com"
+              disabled
+            />
+            <label for="address">주소 :</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              value="경기도 성남시 분당구 분당내곡로 131 판교테크원 타워1, 8층"
+              disabled
+            />
+            <label
+              for="current-password"
+              id="current-password-label"
+              style="display: none"
+              >기존 비밀번호:</label
+            >
+            <input
+              type="password"
+              id="current-password"
+              name="current-password"
+              style="display: none"
+            />
+            <label for="password" id="new-password-label" style="display: none"
+              >새 비밀번호:</label
+            >
+            <input
+              type="password"
+              id="password"
+              name="password"
+              style="display: none"
+            />
+            <label
+              for="confirm-password"
+              id="confirm-password-label"
+              style="display: none"
+              >새 비밀번호 확인:</label
+            >
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              style="display: none"
+            />
+            <button
+              type="button"
+              id="update-profile-btn"
+              style="display: none; padding: 2px 10px"
+            >
+              수정 완료
+            </button>
+            <button
+              type="button"
+              id="update-cancle-profile-btn"
+              style="display: none; padding: 2px 10px; margin-left: 10px"
+              onclick="location.href='mypage.html'"
+            >
+              수정 취소
+            </button>
+          </form>
+          <div id="update-success-msg" style="display: none">
+            개인 정보가 성공적으로 업데이트되었습니다.
+          </div>
+          <div id="update-error-msg" style="display: none">
+            모든 항목을 입력해주세요.
+          </div>
+          <a href="#" id="edit-profile-btn">개인정보 수정</a>
+        </div>
+
+        <div class="order-history">
+          <h2>주문 내역</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>주문 번호</th>
+                <th>주문 일자</th>
+                <th>주문 상품</th>
+                <th>주문 금액</th>
+                <th>배송 상태</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>20240429001</td>
+                <td>2024-04-29</td>
+                <td>Asics Gel-Kayano 5 OG Silver White</td>
+                <td>199,000원</td>
+                <td>배송 완료</td>
+              </tr>
+              <tr>
+                <td>20240428002</td>
+                <td>2024-04-28</td>
+                <td>Stussy 8 Ball Hoodie Black - 21FW</td>
+                <td>418,000원</td>
+                <td>배송 준비중</td>
+              </tr>
+              <!-- 추가 주문 내역 데이터 행 -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="wishlist">
+          <h2>찜한 상품 목록</h2>
+          <div class="wishlist-items">
+            <div class="wishlist-item">
+              <img src="./img/MP3.jpg" alt="상품 이미지" />
+              <span class="product-name">
+                Stussy Basic Stussy Crew Black 2023
+              </span>
+            </div>
+            <div class="wishlist-item">
+              <img src="./img/JD3.jpg" alt="상품 이미지" />
+              <span class="product-name">
+                NSW Club French Terry <br />
+                Crew Sweatshirt Black
+              </span>
+            </div>
+            <div class="wishlist-item">
+              <img src="./img/JD4.jpg" alt="상품 이미지" />
+              <span class="product-name">
+                Peaceminusone <br />
+                Kwondo1 White
+              </span>
+            </div>
+            <div class="wishlist-item">
+              <img src="./img/MP2.jpg" alt="상품 이미지" />
+              <span class="product-name">New Balance 530 White</span>
+            </div>
+            <!-- 추가적인 찜한 상품 목록 항목 -->
+          </div>
+        </div>
+
+        <div class="coupons">
+          <h2>보유 쿠폰</h2>
+          <div class="coupon-items">
+            <div class="coupon-item">
+              <img src="./img/10.jpg" alt="쿠폰 이미지" />
+              <div class="coupon-details">
+                <span class="coupon-name">10% 할인 쿠폰</span>
+                <span class="coupon-code">CODE123</span>
+              </div>
+            </div>
+            <div class="coupon-item">
+              <img src="./img/10.jpg" alt="쿠폰 이미지" />
+              <div class="coupon-details">
+                <span class="coupon-name">10% 할인 쿠폰</span>
+                <span class="coupon-code">CODE123</span>
+              </div>
+            </div>
+            <div class="coupon-item">
+              <img src="./img/20.jpg" alt="쿠폰 이미지" />
+              <div class="coupon-details">
+                <span class="coupon-name">20% 할인 쿠폰</span>
+                <span class="coupon-code">SAVEBIG</span>
+              </div>
+            </div>
+            <div class="coupon-item">
+              <img src="./img/20.jpg" alt="쿠폰 이미지" />
+              <div class="coupon-details">
+                <span class="coupon-name">20% 할인 쿠폰</span>
+                <span class="coupon-code">SAVEBIG</span>
+              </div>
+            </div>
+            <!-- 추가적인 쿠폰 및 할인 정보 항목 -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="bottom-main">
+        <div class="ft-top">
+          <div class="ft-left">
+            <div class="ft-lt">
+              <ul>
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">검수기준</a></li>
+                <li><a href="#">이용정책</a></li>
+                <li><a href="#">패널티 정책</a></li>
+                <li><a href="#">커뮤니티 가이드라인</a></li>
+              </ul>
+            </div>
+            <div class="ft-lt">
+              <ul>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">서비스 소개</a></li>
+                <li><a href="#">스토어 안내</a></li>
+                <li><a href="#">판매자 방문접수</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="ft-right">
+            <h3>고객센터 1588-7813</h3>
+            <p class="p-top">
+              운영시간 평일 10:00 - 18:00 (토·일, 공휴일 휴무)
+            </p>
+            <p>점심시간 평일 13:00 - 14:00</p>
+            <p class="p-bottom">1:1 문의하기는 앱에서만 가능합니다.</p>
+            <div class="ri-box">
+              <a href="#"><h3>자주 묻는 질문</h3></a>
+            </div>
+          </div>
+        </div>
+        <div class="ft-bottom">
+          <div class="ftb-left">
+            <div class="ft-head">
+              <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">인재채용</a></li>
+                <li><a href="#">제휴제안</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+              </ul>
+            </div>
+            <div class="ft-middle">
+              <ul>
+                <li>MCS 주식회사·대표 이동현</li>
+                <li>사업자등록번호 : 123-145-67890 사업자정보확인</li>
+                <li>통신판매업 : 제 2024-성남분당A-0123호</li>
+                <li>
+                  사업장소재지 : 경기도 성남시 분당구 분당내곡로 131 판교테크원
+                  타워1, 8층
+                </li>
+                <li>호스팅 서비스 : 네이버클라우드 ㈜</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ftb-right">
+            <div class="ft-img">
+              <a href="#"><img src="./svg/인스타_블랙.svg" alt="인스타" /></a>
+              <a href="#"
+                ><img src="./svg/페이스북_블랙.svg" alt="페이스북"
+              /></a>
+              <a href="#"
+                ><img src="./svg/카카오톡_블랙.svg" alt="카카오톡"
+              /></a>
+            </div>
+            <p class="copy">ⓒ MCS Corp.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document
+        .getElementById("edit-profile-btn")
+        .addEventListener("click", function () {
+          document.getElementById("current-password-label").style.display =
+            "block";
+          document.getElementById("current-password").style.display = "block";
+          document.getElementById("new-password-label").style.display = "block";
+          document.getElementById("password").style.display = "block";
+          document.getElementById("confirm-password-label").style.display =
+            "block";
+          document.getElementById("confirm-password").style.display = "block";
+          document.getElementById("update-profile-btn").style.display =
+            "inline-block";
+          document.getElementById("update-cancle-profile-btn").style.display =
+            "inline-block";
+          document.getElementById("name").disabled = false;
+          document.getElementById("email").disabled = false;
+          document.getElementById("address").disabled = false;
+        });
+
+      document
+        .getElementById("update-profile-btn")
+        .addEventListener("click", function () {
+          var newName = document.getElementById("name").value;
+          var newEmail = document.getElementById("email").value;
+          var newAddress = document.getElementById("address").value;
+          var currentPassword =
+            document.getElementById("current-password").value;
+          var newPassword = document.getElementById("password").value;
+          var confirmPassword =
+            document.getElementById("confirm-password").value;
+
+          if (
+            newName === "" ||
+            newEmail === "" ||
+            newAddress === "" ||
+            currentPassword === "" ||
+            newPassword === "" ||
+            confirmPassword === ""
+          ) {
+            alert("빈 곳 없이 전부 작성하였는지 다시 확인해주세요.");
+            return;
+          }
+
+          if (newPassword !== confirmPassword) {
+            alert("비밀번호가 일치하지 않습니다. 다시 확인해주세요.");
+            return;
+          }
+
+          // 여기서는 간단히 콘솔에 출력
+          console.log("새로운 이름 : ", newName);
+          console.log("새로운 이메일 : ", newEmail);
+          console.log("새로운 주소 : ", newAddress);
+          console.log("기존 비밀번호 : ", currentPassword);
+          console.log("새로운 비밀번호 : ", newPassword);
+
+          var successMsg = document.getElementById("update-success-msg");
+          successMsg.style.display = "none";
+          setTimeout(function () {
+            successMsg.style.display = "none";
+            document.getElementById("current-password-label").style.display =
+              "none";
+            document.getElementById("current-password").style.display = "none";
+            document.getElementById("new-password-label").style.display =
+              "none";
+            document.getElementById("password").style.display = "none";
+            document.getElementById("confirm-password-label").style.display =
+              "none";
+            document.getElementById("confirm-password").style.display = "none";
+            document.getElementById("update-profile-btn").style.display =
+              "none";
+            document.getElementById("update-cancle-profile-btn").style.display =
+              "none";
+            document.getElementById("name").disabled = true;
+            document.getElementById("email").disabled = true;
+            document.getElementById("address").disabled = true;
+          }, 0);
+        });
+    </script>
+  </body>
+</html>
