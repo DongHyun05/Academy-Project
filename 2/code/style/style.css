@@ -1,19 +1,6 @@
-@font-face {
-  font-family: "Diphylleia-Regular";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/Diphylleia-Regular.woff2")
-    format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
 * {
   margin: 0;
   padding: 0;
-  font-family: "Diphylleia-Regular";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/Diphylleia-Regular.woff2")
-    format("woff2");
-  font-weight: normal;
-  font-style: normal;
 }
 
 ul,
@@ -25,80 +12,268 @@ a {
   text-decoration: none;
 }
 
-.card {
-  width: 400px;
-  aspect-ratio: 1 / 0.7;
-  border-radius: 8px;
-  position: relative;
-  cursor: pointer;
+body {
+  height: 5000px;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
 }
 
-.card .image-box {
+/* header style */
+
+header {
   width: 100%;
-  height: 100%;
-  border-radius: inherit;
 }
 
-.card .image-box img {
-  border: 3px solid #fff;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 90%;
-  border-radius: inherit;
-  transition: 0.5s ease-in-out;
-}
+/* header-top style */
 
-.card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border: 2px solid #fff;
-  border-radius: inherit;
-  opacity: 0;
-  transition: 0.4s ease-in-out;
-}
-
-.card:hover img {
-  filter: grayscale(1) brightness(0.4);
-}
-
-.card:hover::after {
-  opacity: 1;
-  inset: 20px;
-}
-
-.content {
-  width: 80%;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
-}
-
-.card:hover .content {
-  transition: 0.6s ease-in-out;
-  opacity: 1;
-}
-
-.content h2 {
-  width: inherit;
-  margin: 0 auto;
+.header-top {
+  height: 50px;
   font-weight: bold;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.header-top .header-event {
+  height: 50px;
+  padding: 10px;
+  background: #a9bdff;
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.header-top .header-event span {
+  font-size: 18px;
   color: #fff;
 }
 
-.content a {
-  color: #333;
-  background: #ffffff9c;
-  width: 100px;
-  line-height: 15px;
-  margin: 50px auto 0;
-  padding: 5px 10px;
+.header-top .header-event a {
+  width: 150px;
+  height: 30px;
+  float: right;
   display: block;
   border-radius: 5px;
+  color: #fff;
+  padding: 5px 10px;
+  background: #77f;
+  box-sizing: border-box;
+}
+
+/* header-slide style */
+
+.header-slide {
+  height: 600px;
+  margin: -50px 0;
+  background: #faf0a5 url(../img/slide01.png) no-repeat center;
+  background-size: contain;
+}
+
+/* sticky header style */
+
+.slide-top {
+  background: rgba(250, 239, 162, 0.8);
+  height: 50px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  position: sticky;
+  top: 0px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+.slide-top .search-box {
+  width: 50%;
+  height: 30px;
+  border: 1px solid #999;
+  border-radius: 20px;
+  background: #fff url(../svg/icons8-돋보기.svg) no-repeat;
+  background-size: 15px;
+  background-position: 10px center;
+  text-indent: 30px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.slide-top .logo {
+  float: left;
+}
+
+.slide-top .sign-box {
+  float: right;
+}
+
+.slide-top .sign-box li {
+  float: left;
+}
+
+.slide-top .sign-box li a {
+  display: block;
+  padding: 5px;
+  color: #333;
+}
+
+.slide-top .sign-box li a:hover {
+  color: #77f;
   font-weight: bold;
+  text-decoration: underline;
+}
+
+.header-bottom {
+  width: 100%;
+  height: 50px;
+  line-height: 40px;
+  background: rgba(250, 239, 162, 0.8);
+  position: sticky;
+  top: 50px;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.header-bottom ul {
+  width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.header-bottom ul li {
+  float: left;
+}
+
+.header-bottom ul li a {
+  display: block;
+  padding: 5px 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.header-bottom ul li a:hover {
+  color: #77f;
+  text-decoration: underline;
+}
+
+/* slide style */
+
+.slider-wrap {
+  position: relative;
+}
+.image-slider {
+  height: 600px;
+  overflow: hidden;
+}
+.img-wrap {
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+.img-wrap:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: 1;
+}
+.img-wrap img {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: 600px;
+  min-width: 100%;
+  max-width: none;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+h1 {
+  font-size: 400px;
+  line-height: 1.2;
+  display: block;
+  color: transparent;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  padding: 60px 15px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+h1.show {
+  letter-spacing: 0.15em;
+  opacity: 1;
+}
+.slick-arrow {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  background-color: transparent;
+  border-radius: 60px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  outline: none;
+  z-index: 2;
+}
+.slick-arrow.slick-prev {
+  left: 20px;
+}
+.slick-arrow.slick-next {
+  right: 20px;
+}
+.slick-arrow:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+}
+.slick-arrow.slick-prev:before {
+  transform: rotate(-45deg) translate(2px, 2px);
+}
+.slick-arrow.slick-next:before {
+  transform: rotate(135deg) translate(2px, 2px);
+}
+.slider-progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+}
+.slider-progress span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 0px;
+  height: 100%;
+  background-color: #77f;
+  transition: all 0s linear;
+}
+.slider-progress span.active {
+  width: 100%;
 }
