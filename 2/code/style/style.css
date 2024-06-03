@@ -194,7 +194,7 @@ header {
   transform: translate(-50%, -50%);
   object-fit: cover;
 }
-h1 {
+.img-wrap h1 {
   font-size: 400px;
   line-height: 1.2;
   display: block;
@@ -212,7 +212,7 @@ h1 {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-h1.show {
+.img-wrap h1.show {
   letter-spacing: 0.15em;
   opacity: 1;
 }
