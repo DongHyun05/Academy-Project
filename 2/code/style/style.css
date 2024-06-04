@@ -60,10 +60,15 @@ header {
   float: right;
   display: block;
   border-radius: 5px;
-  color: #fff;
+  color: #eee;
   padding: 5px 10px;
   background: #77f;
   box-sizing: border-box;
+}
+
+.header-top .header-event a:hover {
+  color: #fff;
+  background: #44f;
 }
 
 /* header-slide style */
