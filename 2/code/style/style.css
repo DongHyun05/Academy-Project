@@ -308,11 +308,11 @@ header {
   padding: 0 17%;
   box-sizing: border-box;
   position: relative;
-  height: 50px;
+  height: 70px;
 }
 
-.s1-tt h2 {
-  margin-bottom: 10px;
+.s1-tt span {
+  color: #007aff;
 }
 
 .s1-tt p {
@@ -332,7 +332,6 @@ header {
   align-items: center;
   justify-content: center;
   height: 500px;
-  margin-top: 20px;
   overflow: hidden;
 }
 
