@@ -21,6 +21,10 @@ body {
   user-select: none;
 }
 
+#body-inner {
+  margin-top: 50px;
+}
+
 /* header style */
 
 header {
@@ -132,6 +136,7 @@ header {
   top: 50px;
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
+  z-index: 10;
 }
 
 .header-bottom ul {
@@ -161,15 +166,18 @@ header {
 .slider-wrap {
   position: relative;
 }
+
 .image-slider {
   height: 600px;
   overflow: hidden;
 }
+
 .img-wrap {
   height: 600px;
   position: relative;
   overflow: hidden;
 }
+
 .img-wrap:before {
   content: "";
   position: absolute;
@@ -180,6 +188,7 @@ header {
   opacity: 0.3;
   z-index: 1;
 }
+
 .img-wrap img {
   position: absolute;
   display: block;
@@ -194,6 +203,7 @@ header {
   transform: translate(-50%, -50%);
   object-fit: cover;
 }
+
 .img-wrap h1 {
   font-size: 400px;
   line-height: 1.2;
@@ -212,10 +222,12 @@ header {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
+
 .img-wrap h1.show {
   letter-spacing: 0.15em;
   opacity: 1;
 }
+
 .slick-arrow {
   font-size: 0;
   line-height: 0;
@@ -232,12 +244,15 @@ header {
   outline: none;
   z-index: 2;
 }
+
 .slick-arrow.slick-prev {
   left: 20px;
 }
+
 .slick-arrow.slick-next {
   right: 20px;
 }
+
 .slick-arrow:before {
   content: "";
   width: 10px;
@@ -251,12 +266,15 @@ header {
   border-top: 2px solid #fff;
   border-left: 2px solid #fff;
 }
+
 .slick-arrow.slick-prev:before {
   transform: rotate(-45deg) translate(2px, 2px);
 }
+
 .slick-arrow.slick-next:before {
   transform: rotate(135deg) translate(2px, 2px);
 }
+
 .slider-progress {
   position: absolute;
   left: 0;
@@ -264,6 +282,7 @@ header {
   width: 100%;
   height: 5px;
 }
+
 .slider-progress span {
   position: absolute;
   left: 0;
@@ -274,6 +293,158 @@ header {
   background-color: #77f;
   transition: all 0s linear;
 }
+
 .slider-progress span.active {
   width: 100%;
+}
+
+/* section-1 style */
+
+.section-1 {
+  width: 100%;
+}
+
+.s1-tt {
+  padding: 0 17%;
+  box-sizing: border-box;
+  position: relative;
+  height: 50px;
+}
+
+.s1-tt h2 {
+  margin-bottom: 10px;
+}
+
+.s1-tt p {
+  position: absolute;
+  bottom: 0;
+}
+
+.s1-tt a {
+  color: #888;
+  position: absolute;
+  right: 17%;
+  bottom: 0;
+}
+
+.slide-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.slide-box ul li {
+  float: left;
+  margin-left: 100px;
+}
+
+.slide-box ul li:first-child {
+  margin-left: 0;
+}
+
+.slide-box ul li:last-child {
+  margin-right: 0;
+}
+
+.mySwiper {
+  max-width: 70%;
+  width: 100%;
+  height: 420px;
+  padding: 40px 0;
+}
+
+.container {
+  margin: 0 40px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.swiper-slide .box {
+  height: 380px;
+  width: 350px;
+  background: #fff;
+  flex-direction: column;
+  border-radius: 25px;
+  box-shadow: #ccc 2px 2px 5px;
+}
+
+.swiper-slide .img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 190px;
+}
+
+.swiper-slide .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px 25px 0 0;
+}
+
+.swiper-slide .info {
+  padding: 10px;
+  text-align: left;
+}
+
+.swiper-slide .info h3 {
+  font-size: 24px;
+  font-weight: 600;
+  cursor: text;
+  margin: 5px 0;
+}
+
+.swiper-slide .info p {
+  font-size: 14px;
+  cursor: text;
+}
+
+.swiper-slide .info .btn {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.swiper-slide .info .btn button {
+  background: #007aff;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.swiper-slide .info .btn button:hover {
+  background: #3194fe;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.swiper-button-next::after {
+  right: -15px;
+}
+
+.swiper-button-prev::after {
+  left: -15px;
 }
