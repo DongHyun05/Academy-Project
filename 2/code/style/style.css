@@ -302,6 +302,7 @@ header {
 
 .section-1 {
   width: 100%;
+  text-align: center;
 }
 
 .s1-tt {
@@ -309,6 +310,11 @@ header {
   box-sizing: border-box;
   position: relative;
   height: 70px;
+}
+
+.s1-tt h2 {
+  position: absolute;
+  top: 0;
 }
 
 .s1-tt span {
