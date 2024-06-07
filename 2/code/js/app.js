@@ -52,14 +52,12 @@ new Chart(document.getElementById("bar-chart"), {
         label: "배치 현황",
         backgroundColor: [
           "#98817B",
-          "#DBD7D2",
-          "#8B8589",
-          "#B2BEB5",
-          "#708090",
-          "#8C92AC",
+          "#98817B",
+          "#98817B",
+          "#98817B",
+          "#98817B",
+          "#98817B",
         ],
-        color: ["red"],
-
         data: [559, 156, 44, 180, 55, 1],
       },
     ],
@@ -69,6 +67,7 @@ new Chart(document.getElementById("bar-chart"), {
     legend: {
       display: false,
       label: {
+        padding: 10,
         fontSize: 40,
       },
     },
@@ -80,6 +79,27 @@ new Chart(document.getElementById("bar-chart"), {
       font: {
         family: "'Noto Sans KR', sans-serif",
       },
+    },
+    scales: {
+      xAxes: [
+        {
+          gridLines: {
+            display: false,
+          },
+        },
+      ],
+      yAxes: [
+        {
+          ticks: {
+            min: 0,
+            max: 600,
+            stepSize: 200,
+          },
+          gridLines: {
+            display: false,
+          },
+        },
+      ],
     },
   },
 });
