@@ -42,3 +42,44 @@ $(".post-wrapper").slick({
   nextArrow: $(".next"),
   prevArrow: $(".prev"),
 });
+
+new Chart(document.getElementById("bar-chart"), {
+  type: "bar",
+  data: {
+    labels: ["카페", "편의점", "슈퍼마켓", "미용실", "세탁/빨래방", "실내운동"],
+    datasets: [
+      {
+        label: "배치 현황",
+        backgroundColor: [
+          "#98817B",
+          "#DBD7D2",
+          "#8B8589",
+          "#B2BEB5",
+          "#708090",
+          "#8C92AC",
+        ],
+        color: ["red"],
+
+        data: [559, 156, 44, 180, 55, 1],
+      },
+    ],
+  },
+  options: {
+    responsive: false,
+    legend: {
+      display: false,
+      label: {
+        fontSize: 40,
+      },
+    },
+    title: {
+      display: false,
+      text: "서초동의 편의시설 현황 그래프",
+    },
+    bodyFont: {
+      font: {
+        family: "'Noto Sans KR', sans-serif",
+      },
+    },
+  },
+});

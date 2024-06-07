@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/favicon.ico" />
     <link rel="stylesheet" href="./style/style.css" />
     <link
       rel="stylesheet"
@@ -19,7 +20,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
-    <title>다방</title>
+    <title>부동산 필수 앱 다방</title>
   </head>
   <body>
     <header>
@@ -45,7 +46,7 @@
       />
       <input
         type="text"
-        placeholder="검색어를 입력하세요 . . ."
+        placeholder="지역, 지하철, 대학, 단지명 또는 매물번호를 입력해주세요."
         class="search-box"
       />
       <ul class="sign-box">
@@ -193,6 +194,17 @@
             <p>※ 전용면적 33m²(10평) 이하</p>
           </li>
         </ul>
+      </div>
+      <div class="section-4">
+        <div class="left">
+          <canvas id="bar-chart" width="550vw" height="710vh"></canvas>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        </div>
+        <div class="right">
+          <h2>서초동의 편의 시설은 어떤것들이 있을까요?</h2>
+          <hr />
+          <img src="./img/s4-1.png" alt="분포도" />
+        </div>
       </div>
     </div>
     <footer>

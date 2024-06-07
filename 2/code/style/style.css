@@ -279,7 +279,7 @@ header {
 .slide-top .search-box {
   width: 50%;
   height: 30px;
-  border: 1px solid #999;
+  border: 1px solid #ddd;
   border-radius: 20px;
   background: #fff url(../svg/icons8-돋보기.svg) no-repeat;
   background-size: 15px;
@@ -548,6 +548,7 @@ header {
   height: 550px;
   margin: 0 auto;
   overflow: hidden;
+  margin-bottom: 50px !important;
 }
 
 .section-3 h2 {
@@ -567,6 +568,10 @@ header {
   margin-top: 200px;
   margin-left: 0;
   box-shadow: none;
+}
+
+.section-3 ul li:first-child p:last-child {
+  margin-top: 60px;
 }
 
 .section-3 ul li:nth-child(2) {
@@ -595,7 +600,7 @@ header {
 }
 
 .section-3 ul li hr {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .section-3 ul li p {
@@ -608,6 +613,42 @@ header {
 }
 
 .section-3 ul li p:last-child {
-  margin-top: 50px;
   color: red;
+}
+
+/* section-4 Style */
+
+.section-4 {
+  width: 70%;
+  height: 710px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+#bar-chart {
+  margin-bottom: 20px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+  text-align: center;
+}
+
+.section-4 h2 {
+  text-align: left;
+}
+
+.section-4 hr {
+  margin: 20px 0;
+}
+
+.section-4 img {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 95%;
+  margin: 0 auto;
 }
