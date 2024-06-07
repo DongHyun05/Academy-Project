@@ -1,57 +1,44 @@
-jQuery(document).ready(function ($) {
-  var sliderTimer = 5000;
-  var beforeEnd = 500;
-  var $imageSlider = $(".image-slider");
-  $imageSlider.slick({
-    autoplay: true,
-    autoplaySpeed: sliderTimer,
-    speed: 1000,
-    arrows: true,
-    dots: false,
-    adaptiveHeight: true,
-    pauseOnFocus: false,
-    pauseOnHover: false,
-  });
+let interval;
+let activeIndex = 1;
 
-  function progressBar() {
-    $(".slider-progress").find("span").removeAttr("style");
-    $(".slider-progress").find("span").removeClass("active");
-    setTimeout(function () {
-      $(".slider-progress")
-        .find("span")
-        .css("transition-duration", sliderTimer / 1000 + "s")
-        .addClass("active");
-    }, 100);
-  }
-  progressBar();
-  $imageSlider.on("beforeChange", function (e, slick) {
-    progressBar();
-  });
-  $imageSlider.on("afterChange", function (e, slick, nextSlide) {
-    titleAnim(nextSlide);
-  });
+$(document).ready(function () {
+  interval = setInterval(changeActiveIndex, 2500);
+  $(".list-button-item").on("click", function () {
+    // list button의 색상 변경
+    const index = $(this).index();
+    activeIndex = index;
+    changeActiveIndex();
+    clearInterval(interval);
+    // animation 재설정을 위해 animation을 잠시 제거한다.
+    $(".banner").css("animation", "none");
+    // animation 재설정
+    $(".banner").animate({ marginLeft: `${-100 * index}%` }, 1, function () {
+      //1초의 시간 여유(해당 이미지로 이동하는 animation을 위한 시간)를 두고 다시 animation을 설정한다.
+      setTimeout(function () {
+        $(".banner").css("animation", `animation${index + 1} 10s infinite`);
 
-  // Title Animation JS
-  function titleAnim(ele) {
-    $imageSlider.find(".slick-current").find("h1").addClass("show");
-    setTimeout(function () {
-      $imageSlider.find(".slick-current").find("h1").removeClass("show");
-    }, sliderTimer - beforeEnd);
-  }
-  titleAnim();
+        interval = setInterval(changeActiveIndex, 2500);
+      }, 1000);
+    });
+  });
 });
+function changeActiveIndex() {
+  if (activeIndex > 3) {
+    activeIndex %= 4;
+  }
+  changeActiveBtn();
+  activeIndex += 1;
+}
+function changeActiveBtn() {
+  $(".list-button-item").removeClass("active");
+  $(`.list-button span:eq(${activeIndex})`).addClass("active");
+}
 
-let swiper = new Swiper(".container", {
-  slidePerView: 3,
-  spaceBetween: 30,
-  grabCursor: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
+$(".post-wrapper").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  nextArrow: $(".next"),
+  prevArrow: $(".prev"),
 });
