@@ -13,7 +13,6 @@ a {
 }
 
 body {
-  height: 5000px;
   -ms-user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -682,7 +681,7 @@ header {
 
 .section-5 {
   width: 70%;
-  height: 710px;
+
   margin: 0 auto;
 }
 
@@ -737,7 +736,7 @@ span.center {
   background-size: cover;
 }
 .section-5 .pie-chart2 .center {
-  background: url(../img/s5-2.jpg) no-repeat 60%;
+  background: url(../img/s5-2.jpg) no-repeat 70%;
   background-size: cover;
 }
 .section-5 .pie-chart3 .center {
@@ -753,4 +752,151 @@ span.center {
 .section-5 ul li {
   float: left;
   margin: 7% 5%;
+}
+
+/* section-6 Style */
+
+.section-6 {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.s6-tt {
+  box-sizing: border-box;
+  height: 50px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.s6-tt h2 {
+  text-align: left;
+  margin-top: 100px;
+}
+
+.s6-tt a {
+  margin-top: -20px;
+  color: #888;
+  float: right;
+}
+
+.section-6 .img-box ul li a {
+  border-radius: 15px;
+  width: 60%;
+  height: 500px;
+  background-size: cover;
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.section-6 .img-box ul li:first-child a {
+  background: url(../img/s6-1.jpg) no-repeat center;
+}
+
+.section-6 .img-box ul li a h3 {
+  position: absolute;
+  bottom: 10%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: #fff;
+  z-index: 2;
+  text-align: left;
+  background: #00000080;
+  padding: 0 10px;
+}
+
+.section-6 .img-box ul li a p {
+  position: absolute;
+  bottom: 5%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  color: white;
+  z-index: 2;
+  text-align: center;
+  text-shadow: 1px 1px 2px #333;
+  border-radius: 5px;
+  background: #44f;
+  padding: 5px 25px;
+}
+
+.section-6 > ul {
+  width: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.section-6 > ul > li {
+  float: left;
+}
+
+.section-6 > ul > li > a {
+  margin-top: 20px;
+  display: block;
+  color: #333;
+  text-decoration: underline;
+}
+
+/* section-7 Style */
+
+.section-7 {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.section-7 h2 {
+  font-size: 30px;
+}
+
+.section-7 ul {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.section-7 ul li {
+  float: left;
+  width: 30%;
+  height: 300px;
+  box-shadow: 1px 2px 1px #aaa;
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-left: 5%;
+}
+
+.section-7 ul li:first-child {
+  margin-left: 0;
+}
+
+.section-7 ul li a {
+  box-sizing: border-box;
+  padding: 20px;
+  display: block;
+  color: #333;
+}
+
+.section-7 ul li a h3 {
+  font-size: 25px;
+}
+
+.section-7 ul li a hr {
+  border: 1px solid #ddd;
+  outline: none;
+  margin: 20px 0;
+}
+
+.section-7 ul li a p {
+  font-size: 20px;
+  font-weight: bold;
+  height: 50px;
+}
+
+.section-7 ul li a img {
+  float: right;
+  margin-top: 25%;
 }
