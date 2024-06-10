@@ -924,7 +924,7 @@ footer {
 #footer-inner {
   width: 70%;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 35px;
   box-sizing: border-box;
   position: relative;
   top: 0;
@@ -973,7 +973,7 @@ footer {
 .ft-header .ft-sh {
   position: absolute;
   width: 25%;
-  top: 20px;
+  top: 25px;
   right: 13%;
 }
 
@@ -1046,8 +1046,10 @@ footer {
   padding-top: 30px;
   color: #333;
   position: absolute;
-  top: 10px;
+  top: 20px;
+  font-weight: bold;
+  font-size: 20px;
   right: 4%;
-  background: url(../svg/up.svg) no-repeat top left;
+  background: url(../svg/up.svg) no-repeat top center;
   background-size: 25px;
 }
