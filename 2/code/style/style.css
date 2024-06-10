@@ -917,11 +917,11 @@ footer {
 
 .ft-header {
   border-bottom: 1px solid #ddd;
-  padding-bottom: 20px;
+  height: 50px;
 }
 
 .ft-header ul {
-  width: 40%;
+  width: 70%;
   overflow: hidden;
 }
 
@@ -956,15 +956,15 @@ footer {
 
 .ft-header .ft-sh {
   position: absolute;
-  width: 300px;
+  width: 25%;
   top: 15px;
-  right: 15%;
+  right: 13%;
 }
 
 .ft-header .ft-sh input {
   font-size: 15px;
   color: #222222;
-  width: 300px;
+  width: 100%;
   border: none;
   border-bottom: solid #aaaaaa 1px;
   padding-bottom: 10px;
