@@ -644,6 +644,7 @@ header {
   height: 710px;
   margin: 0 auto;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 #bar-chart {
@@ -660,7 +661,9 @@ header {
 }
 
 .section-4 h2 {
-  text-align: left;
+  width: 480px;
+  margin-right: 275px;
+  margin-bottom: 20px;
 }
 
 .section-4 hr {
@@ -672,4 +675,74 @@ header {
   border-radius: 5px;
   width: 95%;
   margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+/* section-5 Style */
+
+.section-5 {
+  width: 70%;
+  height: 710px;
+  margin: 0 auto;
+}
+
+.section-5 h2 {
+  font-size: 30px;
+}
+
+.section-5 hr {
+  margin: 20px 0;
+}
+
+.pie-chart {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+span.center {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 200px;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 1px 1px 2px #333;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+}
+
+.section-5 .center strong {
+  color: #333;
+  text-shadow: none;
+}
+
+.section-5 .pie-chart1 .center {
+  background: url(../img/s5-1.jpg) no-repeat center;
+  background-size: cover;
+}
+.section-5 .pie-chart2 .center {
+  background: url(../img/s5-2.jpg) no-repeat center;
+  background-size: cover;
+}
+.section-5 .pie-chart3 .center {
+  background: url(../img/s5-3.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.section-5 ul {
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.section-5 ul li {
+  float: left;
+  margin: 7% 5%;
 }
