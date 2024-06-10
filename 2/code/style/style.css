@@ -1030,9 +1030,16 @@ footer {
   font-weight: bold;
 }
 
+.ft-header .ft-sh input:focus,
+.ft-header .ft-sh input:valid {
+  bottom: -15px;
+  border-bottom: none;
+}
+
 .ft-header .ft-sh input:focus ~ span,
 .ft-header .ft-sh input:valid ~ span {
-  width: 100%;
+  bottom: -15px;
+  width: 105%;
 }
 
 .ft-header > a {
