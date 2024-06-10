@@ -972,6 +972,9 @@ footer {
   position: relative;
   background: none;
   z-index: 5;
+  background: url(../svg/icons8-돋보기.svg) no-repeat;
+  background-position: 97%;
+  background-size: 15px;
 }
 
 .ft-header .ft-sh input::placeholder {
