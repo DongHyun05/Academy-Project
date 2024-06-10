@@ -606,8 +606,8 @@ header {
 }
 
 .section-3 ul li:nth-child(3) p:last-child {
-  margin-top: 60px;
-  margin-bottom: 135px;
+  margin-top: 110px;
+  margin-bottom: 85px;
 }
 
 .section-3 ul li:last-child {
@@ -616,8 +616,8 @@ header {
 }
 
 .section-3 ul li:last-child p:last-child {
-  margin-top: 60px;
-  margin-bottom: 185px;
+  margin-top: 160px;
+  margin-bottom: 85px;
 }
 
 .section-3 ul li hr {
@@ -701,27 +701,35 @@ header {
   height: 300px;
   border-radius: 50%;
   transition: 0.3s;
+  box-shadow: 0px 0px 5px #333;
 }
 span.center {
   display: block;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   text-align: center;
-  line-height: 200px;
-  font-size: 30px;
+  line-height: 250px;
+  font-size: 50px;
   color: #fff;
   text-shadow: 1px 1px 2px #333;
   font-weight: bold;
   transform: translate(-50%, -50%);
 }
 
-.section-5 .center strong {
+.section-5 .bottom {
+  display: block;
+  position: absolute;
+  width: 250px;
+  bottom: -20%;
+  left: 50%;
+  text-align: center;
+  font-size: 30px;
   color: #333;
-  text-shadow: none;
+  transform: translate(-50%, 0);
 }
 
 .section-5 .pie-chart1 .center {
