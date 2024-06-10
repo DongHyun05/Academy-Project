@@ -681,7 +681,6 @@ header {
 
 .section-5 {
   width: 70%;
-
   margin: 0 auto;
 }
 
@@ -758,8 +757,7 @@ span.center {
 
 .section-6 {
   width: 70%;
-  margin: 0 auto;
-  margin-bottom: 100px;
+  margin: 150px auto;
 }
 
 .s6-tt {
@@ -771,7 +769,6 @@ span.center {
 
 .s6-tt h2 {
   text-align: left;
-  margin-top: 100px;
 }
 
 .s6-tt a {
@@ -845,7 +842,7 @@ span.center {
 .section-7 {
   width: 70%;
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: 300px;
 }
 
 .section-7 h2 {
@@ -899,4 +896,132 @@ span.center {
 .section-7 ul li a img {
   float: right;
   margin-top: 25%;
+}
+
+/* footer Style */
+
+footer {
+  border-top: 1px solid #aaa;
+  height: 350px;
+}
+
+#footer-inner {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.ft-header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.ft-header ul {
+  width: 40%;
+  overflow: hidden;
+}
+
+.ft-header ul li {
+  float: left;
+}
+
+.ft-header ul li a {
+  padding: 0 10px;
+  display: block;
+  color: #999;
+  font-weight: bold;
+  position: relative;
+}
+
+.ft-header ul li a:after {
+  content: "";
+  border: 1px solid #999;
+  position: absolute;
+  height: 15px;
+  top: 10%;
+  right: 0;
+}
+
+.ft-header ul li:last-child a:after {
+  display: none;
+}
+
+.ft-header ul li:first-child a {
+  padding-left: 0;
+}
+
+.ft-header .ft-sh {
+  position: absolute;
+  width: 300px;
+  top: 15px;
+  right: 15%;
+}
+
+.ft-header .ft-sh input {
+  font-size: 15px;
+  color: #222222;
+  width: 300px;
+  border: none;
+  border-bottom: solid #aaaaaa 1px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  position: relative;
+  background: none;
+  z-index: 5;
+}
+
+.ft-header .ft-sh input::placeholder {
+  color: #aaaaaa;
+}
+
+.ft-header .ft-sh input:focus {
+  outline: none;
+}
+
+.ft-header .ft-sh span {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0%; /* right로만 바꿔주면 오 - 왼 */
+  background-color: #666;
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+
+.ft-header .ft-sh label {
+  position: absolute;
+  color: #aaa;
+  left: 10px;
+  font-size: 12px;
+  bottom: 8px;
+  transition: all 0.2s;
+}
+
+.ft-header .ft-sh input:focus ~ label,
+.ft-header .ft-sh input:valid ~ label {
+  font-size: 10px;
+  bottom: 30px;
+  color: #666;
+  font-weight: bold;
+}
+
+.ft-header .ft-sh input:focus ~ span,
+.ft-header .ft-sh input:valid ~ span {
+  width: 100%;
+}
+
+.ft-header > a {
+  padding-top: 25px;
+  color: #333;
+  position: absolute;
+  top: 10px;
+  right: 4%;
+  background: url(../svg/up.svg) no-repeat top left;
+  background-size: 25px;
 }
