@@ -908,7 +908,7 @@ footer {
 #footer-inner {
   width: 70%;
   margin: 0 auto;
-  padding: 20px;
+  padding-top: 30px;
   box-sizing: border-box;
   position: relative;
   top: 0;
@@ -957,7 +957,7 @@ footer {
 .ft-header .ft-sh {
   position: absolute;
   width: 25%;
-  top: 15px;
+  top: 20px;
   right: 13%;
 }
 
@@ -1017,7 +1017,7 @@ footer {
 }
 
 .ft-header > a {
-  padding-top: 25px;
+  padding-top: 30px;
   color: #333;
   position: absolute;
   top: 10px;
