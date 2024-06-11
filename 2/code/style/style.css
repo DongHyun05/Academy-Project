@@ -299,6 +299,8 @@ header {
 
 .slide-top .logo {
   float: left;
+  width: 100px;
+  height: 30px;
 }
 
 .slide-top .sign-box {
