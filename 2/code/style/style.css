@@ -1,6 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Do Hyeon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 ul,
@@ -817,7 +826,7 @@ span.center {
   text-align: center;
   text-shadow: 1px 1px 2px #333;
   border-radius: 5px;
-  background: #44f;
+  background: #326cf9;
   padding: 5px 25px;
 }
 
@@ -870,19 +879,19 @@ span.center {
 .section-7 ul li:first-child {
   margin-left: 0;
   background: url(../img/s7-1.png) no-repeat;
-  background-position: 10% bottom;
+  background-position: 90% bottom;
   background-size: 50%;
 }
 
 .section-7 ul li:nth-child(2) {
   background: url(../img/s7-2.png) no-repeat;
-  background-position: 10% bottom;
+  background-position: 90% bottom;
   background-size: 50%;
 }
 
 .section-7 ul li:last-child {
   background: url(../img/s7-3.png) no-repeat;
-  background-position: 10% bottom;
+  background-position: 90% bottom;
   background-size: 50%;
 }
 
@@ -910,7 +919,7 @@ span.center {
 }
 
 .section-7 ul li a img {
-  float: right;
+  float: left;
   margin-top: 25%;
 }
 
@@ -918,7 +927,6 @@ span.center {
 
 footer {
   border-top: 1px solid #aaa;
-  height: 350px;
 }
 
 #footer-inner {
@@ -934,6 +942,7 @@ footer {
 .ft-header {
   border-bottom: 1px solid #ddd;
   height: 50px;
+  margin-bottom: 10px;
 }
 
 .ft-header ul {
@@ -1052,4 +1061,33 @@ footer {
   right: 4%;
   background: url(../svg/up.svg) no-repeat top center;
   background-size: 25px;
+}
+
+.ft-middle p {
+  margin-bottom: 5px;
+  color: #999;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.ft-bottom p {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  float: left;
+  color: #999;
+}
+
+.ft-bottom ul {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  float: right;
+}
+
+.ft-bottom ul li {
+  margin-left: 5px;
+  float: left;
+}
+
+.ft-bottom ul li a img {
+  width: 30px;
 }

@@ -51,12 +51,12 @@ new Chart(document.getElementById("bar-chart"), {
       {
         label: "배치 현황",
         backgroundColor: [
-          "#98817B",
-          "#98817B",
-          "#98817B",
-          "#98817B",
-          "#98817B",
-          "#98817B",
+          "#326cf9",
+          "#326cf9",
+          "#326cf9",
+          "#326cf9",
+          "#326cf9",
+          "#326cf9",
         ],
         data: [559, 156, 44, 180, 55, 1],
       },
@@ -105,9 +105,9 @@ new Chart(document.getElementById("bar-chart"), {
 });
 
 $(window).ready(function () {
-  draw(41.5, ".pie-chart1", "#ccc");
-  draw(41.1, ".pie-chart2", "#8b22ff");
-  draw(9.7, ".pie-chart3", "#ff0");
+  draw(41.5, ".pie-chart1", "#326cf9");
+  draw(41.1, ".pie-chart2", "#326cf9");
+  draw(9.7, ".pie-chart3", "#326cf9");
 });
 
 function draw(max, classname, colorname) {
