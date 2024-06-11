@@ -124,12 +124,10 @@ function draw(max, classname, colorname) {
 function color1(i, classname, colorname) {
   $(classname).css({
     background:
-      "conic-gradient(" +
-      colorname +
-      " 0% " +
+      "conic-gradient(rgb(50 220 249) 0%, rgb(50, 108, 249)" +
       i +
-      "%, #ffffff " +
+      "%, rgb(255, 255, 255) " +
       i +
-      "% 100%)",
+      "%, rgb(255, 255, 255) 100%",
   });
 }
